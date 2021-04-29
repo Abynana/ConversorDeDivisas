@@ -15,6 +15,7 @@
 
         //Menú para elegir el tipo de conversion que se va a realizar 
 		printf ("¿Qué conversión desea hacer?");
+		scanf ("%d",&Conversion);
 		printf ("1.- Convertir de dólares a pesos?");
 		printf ("2.- Convertir de euros a pesos");
 		printf ("3.- Convertir de libras a pesos");
@@ -32,7 +33,7 @@
 			Case 1:
 				//Resultado = ValorDeConversion * dolarcito
                 printf ("El resultado de %f * %f = %f" ValorDeConversion,dolarcito,Resultado);
-				break;
+			break;
 			Case 2:
 				//Resultado = ValorDeConversion * eurito
                 printf ("El resultado de %f * %f = %f" ValorDeConversion,eurito,Resultado);
