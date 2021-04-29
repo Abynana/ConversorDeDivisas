@@ -21,10 +21,10 @@
 		printf ("4.- Convertir de pesos a dólares");
 		printf ("5.- Convertir de pesos a euros");
 		printf ("6.- Convertir de pesos a libras");
-		printf ("7.- Salir \t");
+		printf ("7.- Salir");
 		
         //Apartado para ingresar el valor deseado
-		printf ("\t Introduzca el valor a covertir, porfavor \t");
+		printf ("Introduzca el valor a covertir, porfavor");
 		scanf ("%f",&ValorDeConversion);
 		
         //Apartado que imprimirá el resultado
@@ -54,7 +54,7 @@
                 printf ("El resultado de %f * %f = %f" ValorDeConversion,librita,Resultado);
 				break;
 			Case 7;
-				printf ("Salir\n");
+				printf ("Salir");
 				exit (0);
             default;
                 printf ("Salir\n")
