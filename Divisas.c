@@ -4,29 +4,32 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-	int main(){
-		//valores actuales al momento de realización del programa//
-		float dolarcito = 0.050;
-		float eurito = 0.042;
-		float librita = 0.036;
-		float ValorDeConversion = 0;
-		int Conversion;
-        float Resultado;
+int main(){
+//valores actuales al momento de realización del programa//
+	float dolarcito = 0.050;
+	float eurito = 0.042;
+	float librita = 0.036;
+	float ValorDeConversion;
+	int Conversion;
 
-        //Menú para elegir el tipo de conversion que se va a realizar 
-		printf ("¿Qué conversión desea hacer?");
-		scanf ("%d",&Conversion);
-		printf ("1.- Convertir de dólares a pesos?");
-		printf ("2.- Convertir de euros a pesos");
-		printf ("3.- Convertir de libras a pesos");
-		printf ("4.- Convertir de pesos a dólares");
-		printf ("5.- Convertir de pesos a euros");
-		printf ("6.- Convertir de pesos a libras");
-		printf ("7.- Salir");
+//Menú para elegir el tipo de conversion que se va a realizar 
+	printf ("¿Qué conversión desea hacer?");
+	printf ("1.- Convertir de dólares a pesos?");
+	printf ("2.- Convertir de euros a pesos");
+	printf ("3.- Convertir de libras a pesos");
+	printf ("4.- Convertir de pesos a dólares");
+	printf ("5.- Convertir de pesos a euros");
+	printf ("6.- Convertir de pesos a libras");
+	scanf ("%d",&Conversion);
 		
-        //Apartado para ingresar el valor deseado
-		printf ("Introduzca el valor a covertir, porfavor");
-		scanf ("%f",&ValorDeConversion);
+//Apartado para elegir la cantidad a convertir
+if (opcion >= 7){
+    	printf("Elige una opcion valida\n");
+    	exit (0);
+}
+else{
+    	printf("Introduzca el valor a covertir, porfavor\n");  
+    	scanf("%f", &ValorDeConversion);
 		
         //Apartado que imprimirá el resultado
 		switch ( Conversion ){
